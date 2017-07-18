@@ -1,220 +1,208 @@
 /* Universal Styles */
 body {
-	margin: 0;
-	font-family: Georgia;
-	font-size: 17px;
-	color: black;
-	}
+	background-color: black;
+	text-align: center;
+	font-family: Helvetica;
+	color: seashell;
+	opacity: 0.9;
+	justify-content: center;
+}
+
+/* Text attributes */
 a {
-	color: black;
-	}
+	text-decoration: underline;
+	color: seashell;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-style: normal;
+}
+
 h2 {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: Georgia;
 	font-size: 30px;
 	font-weight: bold;
 	font-style: normal;
+	display: block;
+}
 
-	}
-nav span {
-	display: inline-block;
-	padding: 20px 10px;
-	}
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h5 {
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h6 {
+	font-size: 21px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+p {
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	margin-left: 20px;
+}
+
 
 /* Header */
-   header {
-  	 display: flex;
-  	 align-items: center;
-  	 position: fixed;
-  	 z-index: 1;
-  	 width: 100%;
-  	 height: 80px;
-  	 border-bottom: 1px solid black;
-  	 background-color: white;
-  	 font-family: Verdana;
-  	 font-size: 14px;
-  	 font-weight: bold;
-  	 }
-  .logo {
-  	display: flex;
-  	align-items: center;
-  	flex-grow: 1;
-  	padding-left: 30px;
-  	}
-  .logo img {
-  	width: 70px;
-  	height: 60px;
-  	margin-right: 12px;
-  	}
-  .logo h1 {
-  	color: MediumAquamarine;
-  	font-size: 14px;
-  	}
-  header nav {
-  	padding-right: 40px;
-  	}
+header {
+	 display: flex;
+	 flex-grow: auto;
+	 align-items: center;
+	 justify-content: space-between;
+	 position: fixed;
+	 z-index: 1;
+	 width: 100%;
+	 height: 69px;
+	 border-bottom: 1px solid seashell;
+	 background-color: black;
+	 font-family: Verdana;
+	 font-size: 14px;
+	 font-weight: bold;
+	 overflow: visible;
+	 top: 0px;
+	 padding-top: 7px;
+ }
 
-/* Universal Styles - News Stories */
-.stories {
+ #logo {
+ 	display: block;
+ }
+
+ header img {
+   	height: 50px;
+   	margin-left: 10px;
+   	}
+
+nav {
+	margin-right: 10px;
+}
+
+span a {
+	display: inline;
+	margin: 0px 10px;
+}
+
+
+/* MISSION */
+#mission {
+	position: relative;
+	top: 70px;
+	background-image: url("./Images/img-mission-background.jpg");
+	height: 700px;
 	display: flex;
-	justify-content: space-between;
-	margin-top: 17px;
-	}
-
-.stories .texte {
-	height: 250px;
-	}
-
-.story {
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	}
-
-.texte {
-	margin-top: 16px;
-	}
-
-.image {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 300px;
-	margin-top: 15px;
-	font-family: Georgia;
-	font-weight: bold;
-	font-size: 30px;
-	color: white;
-	text-align: center;
-	}
-
-
-
-/* Main Content Container */
-.content {
-	display: flex;
-	width: 1232px;
-	margin: 0 auto 78px auto;
-	padding-top: 116px;
-	}
-
-
-/* First News Column */
-.column-large {
-	width: 630px;
-	display: flex;
-	flex-direction: column;
-	margin-right: 32px;
-	}
-
-.main .main-visual {
-	background-image: url("./Images/img-story-main.png");
-	width: 630px;
-	margin-top: 0;
-	font-size: 40px;
-	text-align: left;
-	height: 300px;
 	align-items: center;
-	}
-
-.main-visual .titrem {
-justify-content: center;
+	width: 1200px;
+	margin: 0px auto;
 }
 
-#main-title {
-	justify-content: center;
-
+#mission-text {
+	width: 1200px;
+	background-color: black;
+	display: inline-block;
+	padding: 2px;
 }
 
-.titrem {
-	margin-left: 20px;
-	color: white;
-	font-size: 40px;
-	justify-content: center;
-	}
-
-#six {
-	background-image: url("./Images/img-story-2.png");
-	height: 300px;
-	}
-
-#huit {
-	background-image: url("./Images/img-story-3.png");
-	height: 300px;
-	}
-
-/* Second News Column */
-.column-medium {
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	margin-right: 32px;
-	 }
-
-#four {
-	background-image: url("./Images/img-story-1.png");
-	width: 300px;
-
-	height: 300px;
-	}
-
-/* Third News Column */
-.column-small {
-	width: 240px;
-	display: flex;
-	flex-direction: column;
-	margin-right: 32px;
-	}
-
-.news-bites img {
-	height: 240px;
-	}
-
-.news-bites h3 {
-	margin-bottom: 41px;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	}
-
-.bite span {
+#mission-text h2 {
 	display: block;
-	padding: 11px 20px;
-	border-bottom: 1px solid black;
-	background-color: WhiteSmoke;
-	font-family: Verdana;
-	font-size: 12px; color: DimGray;
-	}
+	padding-top: 5px;
+	margin: 5px;
+}
 
-.bite {
-	padding-left: 11px;
-	}
+#mission-text h4 {
+	display: block;
+	padding-top: 5px;
+	margin: 10px;
+}
 
-/* Footer */
-footer {
-	display: flex;
+
+/* FEATURED */
+#featured {
+	height: 700px;
+	width: 1000px;
 	align-items: center;
+	position: relative;
+	margin: 130px auto 20px auto;
+}
+
+#featured-text {
+	display: inline-block;
+}
+
+.fgrid {
 	justify-content: center;
-	flex-direction: column;
-	width: 100%;
-	height: 325px;
-	background-color: MediumAquamarine;
-	margin: auto;
-	font-family: Verdana;
-	font-size: 12px;
-	}
+	display: flex;
+}
 
-footer .title {
-	display: inline-block;
-	padding-right: 25px;
-	border-right: 2px solid white;
-	font-family: Georgia;
-	font-size: 16px;
-	font-weight: bold; color: white;
-	}
+.tea {
+	margin: 10px 10px 20px 10px;
+	display: block;
+}
 
-footer nav {
-	display: inline-block;
-	padding-left: 25px;
-	}
+.tea img {
+	height: 200px;
+	width: 300px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.tea h3 {
+	display: block;
+	margin: 0px;
+}
+
+
+/* LOCATIONS */
+#locations {
+	height: 500px;
+	width: 1200px;
+	display: block;
+	background-image: url("./Images/img-locations-background.jpg");
+	margin: 5px auto;
+	align-content: center;
+}
+
+#locations-text {
+	padding-top: 40px;
+	padding-bottom: 0px;
+	margin: 0px;
+	display: block;
+}
+
+#locations-grid {
+	justify-content: center;
+	display: flex;
+}
+
+.loc {
+	background-color: black;
+	width: 300px;
+	height: 300px;
+	margin: auto 20px;
+	opacity: 1;
+	display: block;
+}
+
+
+/* FOOTER */
+footer {
+	height: 200px;
+	align-content: center;
+}
