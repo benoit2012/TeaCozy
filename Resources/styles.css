@@ -1,3 +1,70 @@
+/* header */
+header {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana;
+  align-items: center;
+  text-align: left;
+  color: black;
+  position: fixed;
+  border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  padding-bottom: 10px;
+}
+
 h1 {
-  color: red;
+  color: MediumAquamarine;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana;
+  margin: auto 10px;
+}
+
+header span {
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+header a {
+  color: inherit;
+}
+
+.logonom {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.menu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+
+/* Body */
+
+.titrew {
+
+}
+
+.titreb {
+
+}
+
+p {
+
+}
+
+.main {
+  position: absolute;
+  top: 100px;
+}
+
+.corps img {
+  display: inline;
 }
